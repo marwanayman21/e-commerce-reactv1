@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --main-color:#ffffff;
+  --second-color:#dc3545;
+  --rare-color:#212529;
+}
+/* Hide scrollbar by default */
+::-webkit-scrollbar {
+  width: 0; /* Hides the scrollbar */
+  background: transparent; /* Optional: make the scrollbar transparent */
+}
+
+/* Show scrollbar on hover */
+*::-webkit-scrollbar:hover {
+  width: 8px; /* Set the width of the scrollbar on hover */
+}
+
+/* Customize the scrollbar track */
+*::-webkit-scrollbar-track {
+  background: transparent; /* Transparent background */
+}
+
+/* Customize the scrollbar thumb */
+*::-webkit-scrollbar-thumb {
+  background-color: var(--rare-color); /* Use the custom color */
+  border-radius: 10px; /* Optional: round corners */
+  border: 2px solid transparent; /* Optional: padding around the thumb */
+}
+
+/* Show scrollbar on hover (for Firefox) */
+* {
+  scrollbar-width: none; /* Hide scrollbar */
+  scrollbar-color: transparent transparent; /* Transparent scrollbar */
+}
+
+*::-webkit-scrollbar:hover {
+  scrollbar-width: thin; /* Show thin scrollbar on hover */
+  scrollbar-color: var(--rare-color) transparent; /* Custom color */
+}
+
+.btn-hover{
+  background-color: var(--second-color);
+  color: var(--main-color);
+  transition: 0.5s ease-in-out;
+}
+.btn-hover:hover{
+  background-color: var(--main-color);
+  border: 1px solid var(--second-color);
+  color: var(--second-color);
+}
+.content-hover{
+  background-color: var(--main-color);
+  width: 80%;
+  transition:all 0.4s ease-in-out;
+}
+.content-hover:hover{
+  background-color: var(--second-color);
+  color: var(--main-color);
+  width: 90%;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.bg-main-color{
+  background-color: var(--main-color);
+}
+.bg-second-color{
+  background-color: var(--second-color);
+}
+.bg-rare-color{
+  background-color: var(--rare-color);
+}
+.rare-color{
+  color: var(--rare-color);
+}
+.main-color{
+  color: var(--main-color) !important;
+}
+.second-color{
+  color: var(--second-color) !important;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+

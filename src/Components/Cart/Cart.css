@@ -1,0 +1,11 @@
+.cart-container {
+  position: absolute;
+  top: 0;
+  /* left: -100%; */
+  transition: 0.5s ease-in-out; /* Smooth transition */
+  /* Other styling for the cart */
+}
+
+.cart-container.show {
+  left: 0; 
+}
